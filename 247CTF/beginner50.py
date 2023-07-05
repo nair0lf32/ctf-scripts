@@ -1,7 +1,8 @@
-#!/usr/env/python3
+#!/usr/bin/python
 from pwn import * # you can also use requests
 import re
 
+# below are the parts you change to solve the challenge yourself
 host = "7c77fa5239520456.247ctf.com" 
 port = 50325
 conn = remote(host,port)
@@ -32,6 +33,6 @@ for i in range(499): # there are 500 operations to solve and I already solved on
 
 # This runs for a bit and the last line is your flag!
 res = conn.recvline()
-flag = res.decode("utf-8")
-print("FLAG: " + flag)
+flag = str(res) # why not decode it? idk...
 
+print("FLAG: " + flag)
