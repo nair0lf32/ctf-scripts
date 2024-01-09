@@ -1,11 +1,13 @@
 # CTF Sripts
 
-just a bunch of automation scripts or exploits I wrote while playing CTFs
+Just a bunch of automation scripts or exploits I wrote while playing CTFs
 (or some [coding challenges](https://github.com/nair0lf32/challenger))
-
-(here mostly for re-usability...Yeah I am just that lazy)
-
+Here mostly for re-usability (Yeah I am just that lazy).
 you guessed those will be mostly in python buuut...
+
+Some of those might be linked later to writeups (If I am not too lazy)
+
+I write them on [zerOne](https://dev.nairolf32.com/zerOne) my cybersecurity blog.
 
 ## Usage
 
