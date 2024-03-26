@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""TCP - Chaîne encodée"""
 import socket
 import re
 import base64
