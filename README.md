@@ -15,3 +15,9 @@ I could let you figure it yourself but hey... it's quite simple:
 - scripts are named after the challenge I am solving
 - scripts are placed in subfolders corresponding to the challenge platform
 - if the script requires multiple files to work (crypto challs much) I add all that in a subfolder
+
+## DISCLAIMER
+
+HUGE SPOILER ALERT! If you are playing the same CTFs or solving the same challenges you should make sure to solve them yourself (or at least try a lot)
+before looking at the scripts. I put these here mostly for myself (re-usability) and for educational purposes (others can compare their solutions to mine and
+vice versa). DO NOT RUIN THE FUN OR THE LEARNING EXPERIENCE!
