@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""TCP - Retour au collège"""
 import socket
 import re
 import math
@@ -7,7 +8,7 @@ HOST = "challenge01.root-me.org"
 PORT = 52002
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect((HOST, PORT))
-    data = s.recv(4096)
+    data = s.recv(1024)
     print(data.decode())
     nums = re.findall(r"\d+", data.decode())
     num1 = int(nums[1])
