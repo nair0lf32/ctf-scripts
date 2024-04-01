@@ -16,6 +16,11 @@ I could let you figure it yourself but hey... it's quite simple:
 - scripts are placed in subfolders corresponding to the challenge platform
 - if the script requires multiple files to work (crypto challs much) I add all that in a subfolder
 
+Also note that all scripts here are WORKING! those were used by me to solve the challenges, BUT some refining might be needed.
+By example for challenges that use http requests, you might need to change the headers or the cookies or the data sent in the request,
+as for security reasons should be different for each user. I don't always handle that!
+
+
 ## DISCLAIMER
 
 HUGE SPOILER ALERT! If you are playing the same CTFs or solving the same challenges you should make sure to solve them yourself (or at least try a lot)
