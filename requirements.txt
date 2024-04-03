@@ -15,7 +15,7 @@ numpy==1.26.4
 opencv-python==4.9.0.80
 packaging==24.0
 paramiko==3.4.0
-pillow==10.2.0
+pillow==10.3.0
 plumbum==1.8.2
 psutil==5.9.8
 pwntools==4.12.0
