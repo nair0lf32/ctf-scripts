@@ -28,7 +28,7 @@ PySocks==1.7.1
 pytesseract==0.3.10
 python-dateutil==2.9.0.post0
 PyWavelets==1.5.0
-requests==2.31.0
+requests==2.32.0
 ROPGadget==7.4
 rpyc==6.0.0
 six==1.16.0
