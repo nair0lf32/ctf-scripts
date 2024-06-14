@@ -8,7 +8,7 @@ def decrypt(msg):
     return bytes(cd)
 
 
-with open('msg.enc') as f:
+with open("msg.enc") as f:
     ct = bytes.fromhex(f.read())
     cd = decrypt(ct)
     print(cd)
