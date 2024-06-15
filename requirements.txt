@@ -20,6 +20,8 @@ plumbum==1.8.2
 psutil==5.9.8
 pwntools==4.12.0
 pycparser==2.22
+pycryptodome==3.20.0
+pycryptodomex==3.20.0
 pyelftools==0.31
 Pygments==2.17.2
 PyNaCl==1.5.0
@@ -28,6 +30,7 @@ PySocks==1.7.1
 pytesseract==0.3.10
 python-dateutil==2.9.0.post0
 PyWavelets==1.5.0
+pywin32==306
 requests==2.31.0
 ROPGadget==7.4
 rpyc==6.0.0
