@@ -39,5 +39,5 @@ sortedcontainers==2.4.0
 soupsieve==2.5
 unicorn==2.0.1.post1
 unix-ar==0.2.1
-urllib3==2.2.1
+urllib3==2.2.2
 zstandard==0.22.0
