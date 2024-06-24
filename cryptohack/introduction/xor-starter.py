@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+"""xor starter"""
 
 str = "label"
 key = 13
