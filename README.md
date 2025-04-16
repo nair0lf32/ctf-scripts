@@ -12,6 +12,9 @@ I write them on [zerOne](https://dev.nairolf32.com/zerOne) my cybersecurity blog
 
 I could let you figure it yourself but hey... it's quite simple:
 
+- clone the repo
+- install the requirements (for all the scripts I used `pip install -r requirements.txt`)
+- run the script with `python3 <script_name>.py`
 - scripts are named after the challenge I am solving
 - scripts are placed in subfolders corresponding to the challenge platform
 - if the script requires multiple files to work (crypto challs much) I add all that in a subfolder
