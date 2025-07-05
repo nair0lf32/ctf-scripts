@@ -49,3 +49,4 @@ unicorn==2.0.1.post1
 unix-ar==0.2.1
 urllib3==2.2.1
 zstandard==0.22.0
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
