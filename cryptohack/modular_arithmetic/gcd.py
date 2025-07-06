@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """great common divisor"""
 
-a = 66528
-b = 52920
+A = 66528
+B = 52920
 
-def find_gcd(a, b):
-    """find the greatest common divisor of a and b
+
+def find_gcd(n1, n2):
+    """find the greatest common divisor of n1 and n2
     doing this iteratively using Euclid's algorithm
     """
-    while b:
-        a, b = b, a % b
-    return a
+    while n2:
+        n1, n2 = n2, n1 % n2
+    return n1
 
-print(find_gcd(a, b))
+
+print(find_gcd(A, B))

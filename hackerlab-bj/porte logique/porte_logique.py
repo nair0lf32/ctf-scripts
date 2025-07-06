@@ -9,7 +9,7 @@ binary_input = """
 """.strip().split()
 
 # Conversion binaire → entier
-C_bytes = [int(b, 2) for b in binary_input]
+C_BYTES = [int(b, 2) for b in binary_input]
 
 
 def rol(val, r_bits):
@@ -22,24 +22,24 @@ def ror(val, r_bits):
     return ((val >> r_bits) | (val << (8 - r_bits))) & 0xFF
 
 
-def decrypt_byte(c, k1, k2, k3, k4):
-    """Déchiffre un octet avec les clés k1, k2, k3, k4"""
-    tmp1 = c ^ k3 ^ k4
+def decrypt_byte(c, key1, key2, key3, key4):
+    """Déchiffre un octet avec les clés key1, key2, key3, key4"""
+    tmp1 = c ^ key3 ^ key4
     tmp2 = ror(tmp1, 2)
-    tmp3 = tmp2 ^ k2
+    tmp3 = tmp2 ^ key2
     tmp4 = rol(tmp3, 3)
-    return tmp4 ^ k1
+    return tmp4 ^ key1
 
 
 # Bruteforce toutes les combinaisons possibles de clés sur 1 octet
 for k1, k2, k3, k4 in product(range(256), repeat=4):
     try:
-        m_bytes = [decrypt_byte(c, k1, k2, k3, k4) for c in C_bytes]
-        m_str = ''.join(chr(b) for b in m_bytes)
+        M_BYTES = [decrypt_byte(c, k1, k2, k3, k4) for c in C_BYTES]
+        M_STR = ''.join(chr(b) for b in M_BYTES)
 
-        if "HLB2025{" in m_str:
+        if "HLB2025{" in M_STR:
             print(f"Clés trouvées : K1={k1}, K2={k2}, K3={k3}, K4={k4}")
-            print(f"Message : {m_str}")
+            print(f"Message : {M_STR}")
             break
     except ValueError:
         continue
